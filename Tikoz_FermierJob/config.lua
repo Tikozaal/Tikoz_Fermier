@@ -1,10 +1,10 @@
 Config = {}
 
-Config.Command = "Ferme"
+Config.Command = "Ferme" -- Commande pour ouvrir le menu
 
 Config.Blip = {
 
-    UseBlip = true,
+    UseBlip = true, -- Si vous voulez pas de blip changé le true par false
 
     Pos = vector3(2433.48, 4983.94, 1.0),
 
@@ -19,7 +19,7 @@ Config.Blip = {
 
 Config.Pos = {
     
-    Vache = vector4(2268.81, 4877.59, 39.89, 191.3),
+    Vache = vector4(2268.81, 4877.59, 39.89, 191.3), 
 
     Garage = vector3(2413.03, 4996.94, 45.58),
 
