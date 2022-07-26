@@ -256,7 +256,7 @@ RegisterCommand(Config.Command, function()
         CreateMenu(menuf6)
 
     else
-        ESX.ShowNotification('Cette commande est réservé aux ~b~fermier')
+        ESX.ShowNotification('Cette commande est réservé aux ~b~~h~fermier')
     end
 end, false)
 
