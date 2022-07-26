@@ -99,7 +99,7 @@ Citizen.CreateThread(function()
             local menu = Config.Pos.VentePomme
             local dist = #(pos - menu)
 
-            if dist <= 2 then
+            if dist <= 2 and ESX.PlayerData.job.name == "fermier" then
 
                 ESX.ShowHelpNotification("Appuie sur ~INPUT_CONTEXT~ pour ~b~vendre")
                 DrawMarker(6, menu, nil, nil, nil, -90, nil, nil, 0.7, 0.7, 0.7, 0, 251, 255, 200, false, true, 2, false, false, false, false)
