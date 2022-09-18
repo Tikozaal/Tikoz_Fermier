@@ -251,14 +251,12 @@ end,
     }
 }
 
-RegisterCommand(Config.Command, function()
+keyRegister("TikozOpenFermier", "Menu F6", "F6", function()
     if ESX.PlayerData.job.name == "fermier" then
         CreateMenu(menuf6)
-
-    else
-        ESX.ShowNotification('Cette commande est réservé aux ~b~~h~fermier')
     end
-end, false)
+end)
+
 
 Citizen.CreateThread(function()
 
