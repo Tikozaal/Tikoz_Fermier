@@ -357,7 +357,7 @@ AddEventHandler("Tikoz:fermierdepotentreprise", function(money)
     local _source = source
     local xPlayer = ESX.GetPlayerFromId(_source)
     local total = money
-    local xMoney = xPlayer.getMoney()
+    local xMoney = xPlayer.getAccount("bank").money
     
     TriggerEvent('esx_addonaccount:getSharedAccount', "society_fermier", function (account)
         if xMoney >= total then
